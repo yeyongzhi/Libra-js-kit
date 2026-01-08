@@ -1,0 +1,52 @@
+{
+  "name": "libra-js-kit",
+  "version": "1.0.0",
+  "description": "A collection of JavaScript utility functions for various business systems",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./render": {
+      "require": "./dist/render/index.js",
+      "import": "./dist/render/index.mjs",
+      "types": "./dist/render/index.d.ts"
+    },
+    "./calculate": {
+      "require": "./dist/calculate/index.js",
+      "import": "./dist/calculate/index.mjs",
+      "types": "./dist/calculate/index.d.ts"
+    },
+    "./utils": {
+      "require": "./dist/utils/index.js",
+      "import": "./dist/utils/index.mjs",
+      "types": "./dist/utils/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "keywords": [
+    "utils",
+    "render",
+    "calculate",
+    "business",
+    "toolkit"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.8.1",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.5",
+    "vite-plugin-dts": "^4.3.0"
+  }
+}
