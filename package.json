@@ -3,29 +3,32 @@
   "version": "1.0.0",
   "description": "A collection of JavaScript utility functions for various business systems",
   "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "exports": {
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
     },
     "./render": {
-      "require": "./dist/render/index.js",
-      "import": "./dist/render/index.mjs",
-      "types": "./dist/render/index.d.ts"
+      "types": "./dist/render/index.d.ts",
+      "require": "./dist/render/index.cjs",
+      "import": "./dist/render/index.js"
     },
-    "./calculate": {
-      "require": "./dist/calculate/index.js",
-      "import": "./dist/calculate/index.mjs",
-      "types": "./dist/calculate/index.d.ts"
+    "./data-type": {
+      "types": "./dist/dataType/index.d.ts",
+      "require": "./dist/dataType/index.cjs",
+      "import": "./dist/dataType/index.js"
     },
-    "./utils": {
-      "require": "./dist/utils/index.js",
-      "import": "./dist/utils/index.mjs",
-      "types": "./dist/utils/index.d.ts"
+    "./lib": {
+      "types": "./dist/lib/index.d.ts",
+      "require": "./dist/lib/index.cjs",
+      "import": "./dist/lib/index.js"
     }
   },
   "scripts": {
@@ -41,7 +44,7 @@
     "business",
     "toolkit"
   ],
-  "author": "",
+  "author": "Aurora",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.8.1",

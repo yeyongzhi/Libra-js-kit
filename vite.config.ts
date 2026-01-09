@@ -9,23 +9,17 @@ export default defineConfig({
     lib: {
       entry: {
         index: resolve(__dirname, 'src/index.ts'),
+        lib: resolve(__dirname, 'src/lib/index.ts'),
+        dataType: resolve(__dirname, 'src/dataType/index.ts'),
         render: resolve(__dirname, 'src/render/index.ts'),
-        calculate: resolve(__dirname, 'src/calculate/index.ts'),
-        utils: resolve(__dirname, 'src/utils/index.ts'),
       },
       formats: ['es', 'cjs'],
-      fileName: (format, entryName) => {
-        if (entryName === 'index') {
-          return format === 'es' ? 'index.mjs' : 'index.js';
-        }
-        return `${entryName}/index.${format === 'es' ? 'mjs' : 'js'}`;
-      },
     },
     rollupOptions: {
       external: [],
       output: {
-        preserveModules: false,
-        exports: 'named',
+        preserveModules: true,
+        exports: 'named'
       },
     },
   },
