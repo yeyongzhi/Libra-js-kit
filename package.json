@@ -20,7 +20,7 @@
       "require": "./dist/render/index.cjs",
       "import": "./dist/render/index.js"
     },
-    "./data-type": {
+    "./dataType": {
       "types": "./dist/dataType/index.d.ts",
       "require": "./dist/dataType/index.cjs",
       "import": "./dist/dataType/index.js"
@@ -29,6 +29,16 @@
       "types": "./dist/lib/index.d.ts",
       "require": "./dist/lib/index.cjs",
       "import": "./dist/lib/index.js"
+    },
+    "./array": {
+      "types": "./dist/array/index.d.ts",
+      "require": "./dist/array/index.cjs",
+      "import": "./dist/array/index.js"
+    },
+    "./string": {
+      "types": "./dist/string/index.d.ts",
+      "require": "./dist/string/index.cjs",
+      "import": "./dist/string/index.js"
     }
   },
   "scripts": {

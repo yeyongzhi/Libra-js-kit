@@ -12,6 +12,8 @@ export default defineConfig({
         lib: resolve(__dirname, 'src/lib/index.ts'),
         dataType: resolve(__dirname, 'src/dataType/index.ts'),
         render: resolve(__dirname, 'src/render/index.ts'),
+        array: resolve(__dirname, 'src/array/index.ts'),
+        string: resolve(__dirname, 'src/string/index.ts'),
       },
       formats: ['es', 'cjs'],
     },

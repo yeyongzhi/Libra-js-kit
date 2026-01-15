@@ -51,7 +51,7 @@ type renderValueAndUnitParams = {
  * @param {renderValueAndUnitParams} params 配置项
  * @returns {string} 渲染后的字符串
  */
-export function renderValueAndUnit(value: any, unit: any, { needBlock = true }: renderValueAndUnitParams): string {
+export function renderValueAndUnit(value: string | number, unit: string, { needBlock = true }: renderValueAndUnitParams): string {
   if (!isDefined(value)) {
     return getEmptyText()
   }
@@ -75,7 +75,7 @@ export function renderTimeRange(startTime: number, endTime: number, { separator 
   return `${toString(startTime)}${separator}${toString(endTime)}`
 }
 
-type ArrayOption = Record<string, any> & { value: string, label: string }
+type ArrayOption = Record<string, any> & { value: string | number | symbol, label: string }
 
 /**
  * 渲染数组中指定值的标签
@@ -85,7 +85,7 @@ type ArrayOption = Record<string, any> & { value: string, label: string }
  * @param {Array<ArrayOption>} options 数组选项，每个选项包含 value 和 label 属性
  * @returns {string} 匹配值的标签，或空字符串
  */
-export function renderArrayLabelByValue(value: any, options: Array<ArrayOption>): string {
+export function renderArrayLabelByValue(value: string | number | symbol, options: Array<ArrayOption>): string {
   if (!isDefined(value) || !isDefined(options)) {
     return getEmptyText();
   }

@@ -104,7 +104,7 @@ export function isFunction(value: unknown): value is Function {
  * @returns {boolean} 是否为日期对象
  */
 export function isDate(value: unknown): value is Date {
-    return value instanceof Date;
+    return isDefined(value) && value instanceof Date;
 }
 
 /**
@@ -113,7 +113,7 @@ export function isDate(value: unknown): value is Date {
  * @returns {boolean} 是否为正则表达式
  */
 export function isRegExp(value: unknown): value is RegExp {
-    return value instanceof RegExp;
+    return isDefined(value) && value instanceof RegExp;
 }
 
 /**
@@ -122,7 +122,7 @@ export function isRegExp(value: unknown): value is RegExp {
  * @returns {boolean} 是否为错误对象
  */
 export function isError(value: unknown): value is Error {
-    return value instanceof Error;
+    return isDefined(value) && value instanceof Error;
 }
 
 /**
@@ -131,7 +131,7 @@ export function isError(value: unknown): value is Error {
  * @returns {boolean} 是否为 Map
  */
 export function isMap(value: unknown): value is Map<any, any> {
-    return value instanceof Map;
+    return isDefined(value) && value instanceof Map;
 }
 
 /**
@@ -140,7 +140,7 @@ export function isMap(value: unknown): value is Map<any, any> {
  * @returns {boolean} 是否为 Set
  */
 export function isSet(value: unknown): value is Set<any> {
-    return value instanceof Set;
+    return isDefined(value) && value instanceof Set;
 }
 
 /**
@@ -149,7 +149,7 @@ export function isSet(value: unknown): value is Set<any> {
  * @returns {boolean} 是否为 Promise
  */
 export function isPromise(value: unknown): value is Promise<any> {
-    return value instanceof Promise;
+    return isDefined(value) && value instanceof Promise;
 }
 
 export function toString(value: any): string {

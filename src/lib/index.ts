@@ -3,14 +3,14 @@
  * @param value 要检查的值
  * @returns 如果值已定义返回 true，否则返回 false
  */
-export function isDefined<T>(value: any): value is T {
+export function isDefined<T>(value: unknown): value is T {
     return value !== undefined && value !== null;
 }
 
 /**
  * 判断值是否为 null 或 undefined（isDefined 的反向）
  */
-export function isNotDefined<T>(value: T | null | undefined): value is null | undefined {
+export function isNotDefined(value: unknown | null | undefined): value is null | undefined {
   return value === undefined || value === null;
 }
 
