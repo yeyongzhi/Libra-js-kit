@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "references": [],        // 👈 清空 references
+  "include": ["src/**/*"]  // 显式包含所有源码
+}

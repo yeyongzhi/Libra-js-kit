@@ -1,5 +1,7 @@
 /**
- * 数组工具函数集合（纯函数，不修改原数组）
+ * 数组操作工具集，提供去重、扁平化、分组等常用方法。
+ * 
+ * @packageDocumentation
  */
 
 import { isArray, isNumber } from "../dataType/index";
@@ -12,13 +14,13 @@ import { isArray, isNumber } from "../dataType/index";
  * @returns {Array<Array<T>>} 分块后的数组
  */
 export function chunk<T>(arr: T[], size: number): T[][] {
-    if (!isNumber(size) || !isArray(arr)) return [];
-    if (size <= 0 || size >= arr.length) return [];
-    const result: T[][] = [];
-    for (let i = 0; i < arr.length; i += size) {
-        result.push(arr.slice(i, i + size));
-    }
-    return result;
+  if (!isNumber(size) || !isArray(arr)) return [];
+  if (size <= 0 || size >= arr.length) return [];
+  const result: T[][] = [];
+  for (let i = 0; i < arr.length; i += size) {
+    result.push(arr.slice(i, i + size));
+  }
+  return result;
 }
 
 /**
@@ -28,9 +30,9 @@ export function chunk<T>(arr: T[], size: number): T[][] {
  * @returns {Array<T>} 扁平化后的数组
  */
 export function flattenDeep<T>(arr: any[]): T[] {
-    return arr.reduce<T[]>((acc, val) => {
-        return acc.concat(Array.isArray(val) ? flattenDeep(val) : val);
-    }, []);
+  return arr.reduce<T[]>((acc, val) => {
+    return acc.concat(Array.isArray(val) ? flattenDeep(val) : val);
+  }, []);
 }
 
 /**
@@ -42,22 +44,22 @@ export function flattenDeep<T>(arr: any[]): T[] {
  * @returns {Array<T>} 去重后的数组
  */
 export function unique<T>(arr: T[], key?: keyof T | ((item: T) => unknown)): T[] {
-    if (arr.length === 0) return [];
-    const seen = new Set<unknown>();
-    const result: T[] = [];
-    const getKey = (item: T): unknown => {
-        if (typeof key === 'function') return key(item);
-        if (typeof key === 'string') return item[key];
-        return item;
-    };
-    for (const item of arr) {
-        const k = getKey(item);
-        if (!seen.has(k)) {
-            seen.add(k);
-            result.push(item);
-        }
+  if (arr.length === 0) return [];
+  const seen = new Set<unknown>();
+  const result: T[] = [];
+  const getKey = (item: T): unknown => {
+    if (typeof key === 'function') return key(item);
+    if (typeof key === 'string') return item[key];
+    return item;
+  };
+  for (const item of arr) {
+    const k = getKey(item);
+    if (!seen.has(k)) {
+      seen.add(k);
+      result.push(item);
     }
-    return result;
+  }
+  return result;
 }
 
 /**
@@ -68,8 +70,8 @@ export function unique<T>(arr: T[], key?: keyof T | ((item: T) => unknown)): T[]
  * @returns {Array<T>} a 中不在 b 中的元素数组  
  */
 export function difference<T>(a: T[], b: T[]): T[] {
-    const bSet = new Set(b);
-    return a.filter(x => !bSet.has(x));
+  const bSet = new Set(b);
+  return a.filter(x => !bSet.has(x));
 }
 
 /**
@@ -80,8 +82,8 @@ export function difference<T>(a: T[], b: T[]): T[] {
  * @returns {Array<T>} a 和 b 的交集数组
  */
 export function intersection<T>(a: T[], b: T[]): T[] {
-    const bSet = new Set(b);
-    return a.filter(x => bSet.has(x));
+  const bSet = new Set(b);
+  return a.filter(x => bSet.has(x));
 }
 
 /**
@@ -93,23 +95,23 @@ export function intersection<T>(a: T[], b: T[]): T[] {
  * @returns {Array<{ value: K, data: T[] }>} 分组后的数组，每个元素包含分组键和对应数据数组
  */
 export function groupBy<T, K extends string | number>(
-    arr: T[],
-    keyFn: (item: T) => K
+  arr: T[],
+  keyFn: (item: T) => K
 ): Array<{ value: K, data: T[] }> {
-    let list = [];
-    const result = {} as Record<K, T[]>;
-    for (const item of arr) {
-        const key = keyFn(item);
-        if (!result[key]) result[key] = [];
-        result[key].push(item);
+  let list = [];
+  const result = {} as Record<K, T[]>;
+  for (const item of arr) {
+    const key = keyFn(item);
+    if (!result[key]) result[key] = [];
+    result[key].push(item);
+  }
+  list = (Object.keys(result) as K[]).map((item: K) => {
+    return {
+      value: item,
+      data: result[item]
     }
-    list = (Object.keys(result) as K[]).map((item: K) => {
-        return {
-            value: item,
-            data: result[item]
-        }
-    });
-    return list;
+  });
+  return list;
 }
 
 /**
@@ -119,9 +121,9 @@ export function groupBy<T, K extends string | number>(
  * @returns {T | undefined} 随机返回的元素，若数组为空则返回 undefined
  */
 export function randomItem<T>(arr: T[]): T | undefined {
-    if (arr.length === 0) return undefined;
-    const index = Math.floor(Math.random() * arr.length);
-    return arr[index];
+  if (arr.length === 0) return undefined;
+  const index = Math.floor(Math.random() * arr.length);
+  return arr[index];
 }
 
 export interface TreeOptions {

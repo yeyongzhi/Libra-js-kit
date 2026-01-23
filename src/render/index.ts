@@ -28,7 +28,7 @@ export function renderObjectValue(obj: Record<string, any>, key: string): string
   return defaultValue(toString(obj[key]), getEmptyText());
 }
 
-type RenderTextByArrayParams = {
+export type RenderTextByArrayParams = {
   separator?: string
 }
 export function renderTextByArray(items: string[], { separator = '、' }: RenderTextByArrayParams = {}): string {
@@ -41,7 +41,7 @@ export function renderTextByArray(items: string[], { separator = '、' }: Render
   return items.filter((item) => isDefined(item)).join(separator);
 }
 
-type renderValueAndUnitParams = {
+export type renderValueAndUnitParams = {
   needBlock?: boolean
 }
 /**
@@ -58,7 +58,7 @@ export function renderValueAndUnit(value: string | number, unit: string, { needB
   return `${toString(value)}${needBlock ? ' ' : ''}${defaultValue(unit, '')}`
 }
 
-type renderTimeRangeParams = {
+export type renderTimeRangeParams = {
   separator?: string
 }
 /**
@@ -75,7 +75,7 @@ export function renderTimeRange(startTime: number, endTime: number, { separator 
   return `${toString(startTime)}${separator}${toString(endTime)}`
 }
 
-type ArrayOption = Record<string, any> & { value: string | number | symbol, label: string }
+export type ArrayOption = Record<string, any> & { value: string | number | symbol, label: string }
 
 /**
  * 渲染数组中指定值的标签
@@ -99,7 +99,7 @@ export function renderArrayLabelByValue(value: string | number | symbol, options
   return isDefined<ArrayOption>(target) ? target.label : getEmptyText();
 }
 
-type RenderPercentageParams = {
+export type RenderPercentageParams = {
   precision?: number
 }
 /**
@@ -113,7 +113,7 @@ export function renderPercentage(value: number, { precision = 2 }: RenderPercent
   return `${(Number(value) * 100).toFixed(precision)}%`;
 }
 
-type RenderFileSizeParams = {
+export type RenderFileSizeParams = {
   precision?: number
 }
 /**
@@ -133,7 +133,7 @@ export function renderFileSize(bytes: number, { precision = 1 }: RenderFileSizeP
   return `${size.toFixed(precision)} ${FILE_SIZE_UNITS[unitIndex]}`;
 }
 
-type RenderBooleanParams = {
+export type RenderBooleanParams = {
   trueText?: string
   falseText?: string
 }
@@ -165,7 +165,7 @@ export function renderEmpty(value: unknown, placeholder = getEmptyText()): strin
   return isDefined(value) ? toString(value) : placeholder;
 }
 
-type RenderMaskedStringParams = {
+export type RenderMaskedStringParams = {
   /**
    * 隐藏前 N 个字符
    * 与 hideLast 互斥，若同时传入，优先使用 hideFirst
@@ -260,7 +260,7 @@ export function renderMaskedString(
   return `${prefix}${mask}${suffix}`;
 }
 
-type RenderTruncatedTextParams = {
+export type RenderTruncatedTextParams = {
   maxLength?: number
   ellipsis?: string // 默认 '...'
 }
@@ -279,7 +279,7 @@ export function renderTruncatedText(text: unknown, params: RenderTruncatedTextPa
   return str.slice(0, maxLength) + ellipsis;
 }
 
-type RenderListSummaryParams = {
+export type RenderListSummaryParams = {
   maxCount?: number // 最多显示前 N 个名字
   suffix?: string  // 如 '等'
 }
