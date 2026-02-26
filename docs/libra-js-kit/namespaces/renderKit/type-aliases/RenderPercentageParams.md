@@ -8,12 +8,20 @@
 
 > **RenderPercentageParams** = `object`
 
-Defined in: [render/index.ts:102](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L102)
+Defined in: [render/index.ts:109](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L109)
 
 ## Properties
+
+### needBlock?
+
+> `optional` **needBlock**: `boolean`
+
+Defined in: [render/index.ts:111](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L111)
+
+***
 
 ### precision?
 
 > `optional` **precision**: `number`
 
-Defined in: [render/index.ts:103](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L103)
+Defined in: [render/index.ts:110](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L110)

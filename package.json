@@ -15,6 +15,11 @@
       "require": "./dist/index.cjs",
       "import": "./dist/index.js"
     },
+    "./validate": {
+      "types": "./dist/validate/index.d.ts",
+      "require": "./dist/validate/index.cjs",
+      "import": "./dist/validate/index.js"
+    },
     "./render": {
       "types": "./dist/render/index.d.ts",
       "require": "./dist/render/index.cjs",

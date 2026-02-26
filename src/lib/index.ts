@@ -20,7 +20,7 @@ export function isNotDefined(value: unknown | null | undefined): value is null |
  * @param defaultValue 默认值
  * @returns 如果值已定义则返回该值，否则返回默认值
  */
-export function defaultValue<T>(value: T, defaultValue: T): T {
+export function defaultValue(value: unknown, defaultValue: any) {
     return isDefined(value) ? value : defaultValue;
 }
 

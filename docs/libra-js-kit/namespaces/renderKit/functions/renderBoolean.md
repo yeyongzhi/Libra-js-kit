@@ -6,9 +6,9 @@
 
 # Function: renderBoolean()
 
-> **renderBoolean**(`value`, `params`): `string`
+> **renderBoolean**(`value`, `params?`): `string`
 
-Defined in: [render/index.ts:146](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L146)
+Defined in: [render/index.ts:156](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L156)
 
 渲染布尔值
 
@@ -20,9 +20,9 @@ Defined in: [render/index.ts:146](https://github.com/yeyongzhi/Libra-js-kit/blob
 
 布尔值
 
-### params
+### params?
 
-[`RenderBooleanParams`](../type-aliases/RenderBooleanParams.md) = `{}`
+[`RenderBooleanParams`](../type-aliases/RenderBooleanParams.md)
 
 配置项
 

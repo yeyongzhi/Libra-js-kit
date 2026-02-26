@@ -10,5 +10,7 @@
 
 ## Functions
 
+- [allLowerCase](functions/allLowerCase.md)
+- [allUpperCase](functions/allUpperCase.md)
 - [capitalize](functions/capitalize.md)
 - [reverse](functions/reverse.md)

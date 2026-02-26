@@ -14,6 +14,7 @@ export default defineConfig({
         render: resolve(__dirname, 'src/render/index.ts'),
         array: resolve(__dirname, 'src/array/index.ts'),
         string: resolve(__dirname, 'src/string/index.ts'),
+        validate: resolve(__dirname, 'src/validate/index.ts'),
       },
       formats: ['es', 'cjs'],
     },

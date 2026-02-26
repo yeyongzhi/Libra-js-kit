@@ -8,7 +8,7 @@
 
 > **firstDefined**\<`T`\>(...`values`): `T` \| `null` \| `undefined`
 
-Defined in: [lib/index.ts:32](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/lib/index.ts#L32)
+Defined in: [lib/index.ts:32](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/lib/index.ts#L32)
 
 从多个值中返回第一个已定义的值（类似 SQL COALESCE）
 

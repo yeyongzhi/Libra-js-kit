@@ -6,14 +6,15 @@
 
 # Variable: VERSION
 
-> `const` **VERSION**: `"1.0.0"` = `'1.0.0'`
+> `const` **VERSION**: `string` = `'1.0.0'`
 
-Defined in: [index.ts:42](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/index.ts#L42)
+Defined in: [index.ts:59](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/index.ts#L59)
 
 当前 `libra-js-kit` 的版本号。
 
 ## Example
 
-```ts
-console.log(NAME, VERSION); // "libra-js-kit 1.0.0"
+```javascript
+import * as libra from 'libra-js-kit';
+console.log(libra.VERSION); // "1.0.0"
 ```

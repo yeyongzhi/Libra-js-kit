@@ -6,34 +6,28 @@
 
 # Function: defaultValue()
 
-> **defaultValue**\<`T`\>(`value`, `defaultValue`): `T`
+> **defaultValue**(`value`, `defaultValue`): `any`
 
-Defined in: [lib/index.ts:23](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/lib/index.ts#L23)
+Defined in: [lib/index.ts:23](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/lib/index.ts#L23)
 
 为未定义的值提供默认值
-
-## Type Parameters
-
-### T
-
-`T`
 
 ## Parameters
 
 ### value
 
-`T`
+`unknown`
 
 要检查的值
 
 ### defaultValue
 
-`T`
+`any`
 
 默认值
 
 ## Returns
 
-`T`
+`any`
 
 如果值已定义则返回该值，否则返回默认值

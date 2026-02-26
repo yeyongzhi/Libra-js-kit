@@ -23,6 +23,15 @@ export function isNumber(value: unknown): value is number {
 }
 
 /**
+ * 判断是否为 NaN
+ * @param value 任意值
+ * @returns {boolean} 是否为 NaN
+ */
+export function isNaN(value: unknown): value is number {
+    return isNumber(value) && Number.isNaN(value);
+}
+
+/**
  * 判断是否为布尔值
  * @param value 任意值
  * @returns {boolean} 是否为布尔值

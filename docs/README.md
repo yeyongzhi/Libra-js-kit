@@ -11,6 +11,7 @@
 - [libKit](libra-js-kit/namespaces/libKit/README.md)
 - [renderKit](libra-js-kit/namespaces/renderKit/README.md)
 - [stringKit](libra-js-kit/namespaces/stringKit/README.md)
+- [validateKit](libra-js-kit/namespaces/validateKit/README.md)
 
 ## Variables
 

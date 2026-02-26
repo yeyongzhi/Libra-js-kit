@@ -8,7 +8,7 @@
 
 > **isSymbol**(`value`): `value is symbol`
 
-Defined in: [dataType/index.ts:57](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/dataType/index.ts#L57)
+Defined in: [dataType/index.ts:66](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/dataType/index.ts#L66)
 
 判断是否为 symbol
 

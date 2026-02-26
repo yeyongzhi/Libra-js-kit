@@ -1,14 +1,12 @@
-/**
- * 数组操作工具集，提供去重、扁平化、分组等常用方法。
- * 
- * @packageDocumentation
- */
-
 import { isArray, isNumber } from "../dataType/index";
 
 /**
  * 将数组按指定大小size依次分块
- * @example chunk([1,2,3,4,5], 2) => [[1,2], [3,4], [5]]
+ * @example
+ * ```javascript
+ * // 示例：将数组 [1,2,3,4,5] 按大小 2 分块
+ * chunk([1,2,3,4,5], 2) => [[1,2], [3,4], [5]]
+ * ```
  * @param {Array<T>} arr 要分块的数组
  * @param {number} size 每个分块的大小
  * @returns {Array<Array<T>>} 分块后的数组

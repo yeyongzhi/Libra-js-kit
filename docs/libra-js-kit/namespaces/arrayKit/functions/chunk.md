@@ -8,7 +8,7 @@
 
 > **chunk**\<`T`\>(`arr`, `size`): `T`[][]
 
-Defined in: [array/index.ts:15](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/array/index.ts#L15)
+Defined in: [array/index.ts:14](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/array/index.ts#L14)
 
 将数组按指定大小size依次分块
 
@@ -40,6 +40,7 @@ Defined in: [array/index.ts:15](https://github.com/yeyongzhi/Libra-js-kit/blob/e
 
 ## Example
 
-```ts
+```javascript
+// 示例：将数组 [1,2,3,4,5] 按大小 2 分块
 chunk([1,2,3,4,5], 2) => [[1,2], [3,4], [5]]
 ```

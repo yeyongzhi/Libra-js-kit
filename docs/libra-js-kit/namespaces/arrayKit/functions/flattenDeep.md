@@ -8,7 +8,7 @@
 
 > **flattenDeep**\<`T`\>(`arr`): `T`[]
 
-Defined in: [array/index.ts:31](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/array/index.ts#L31)
+Defined in: [array/index.ts:30](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/array/index.ts#L30)
 
 深度扁平化数组（递归展开所有嵌套层级）
 

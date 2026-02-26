@@ -6,9 +6,9 @@
 
 # Function: renderFileSize()
 
-> **renderFileSize**(`bytes`, `params`): `string`
+> **renderFileSize**(`bytes`, `params?`): `string`
 
-Defined in: [render/index.ts:125](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L125)
+Defined in: [render/index.ts:134](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L134)
 
 渲染文件大小
 
@@ -20,9 +20,9 @@ Defined in: [render/index.ts:125](https://github.com/yeyongzhi/Libra-js-kit/blob
 
 文件大小（字节）
 
-### params
+### params?
 
-[`RenderFileSizeParams`](../type-aliases/RenderFileSizeParams.md) = `{}`
+[`RenderFileSizeParams`](../type-aliases/RenderFileSizeParams.md)
 
 配置项
 

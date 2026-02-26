@@ -1,3 +1,5 @@
+import { DEFAULT_TIME_FORMAT } from './config'
+
 /**
  * Date 工具函数库
  * 基于原生 Date 实现，参考 dayjs 功能
@@ -33,7 +35,7 @@ export function unix(): number {
  * @param {string} format 格式化字符串，默认为 'YYYY-MM-DD HH:mm:ss'
  * @returns {string} 格式化后的日期字符串
  */
-export function format(date: Date | string | number, format: string = 'YYYY-MM-DD HH:mm:ss'): string {
+export function format(date: Date | string | number, format: string = DEFAULT_TIME_FORMAT): string {
   const d = parse(date);
   if (isNaN(d.getTime())) {
     return '';

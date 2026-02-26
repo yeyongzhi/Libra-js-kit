@@ -6,7 +6,19 @@
 
 # arrayKit
 
-数组操作工具集，涵盖去重、分组、扁平化、打乱、分页等常用方法。
+【数组操作工具集】提供分块、扁平化、分组等一些方法
+
+## Example
+
+```javascript
+import * as arrayKit from 'libra-js-kit/array';
+// 或者直接导出 chunk 方法
+// import { chunk } from 'libra-js-kit/array';
+
+// 示例：将数组 [1,2,3,4,5] 按大小 2 分块
+arrayKit.chunk([1,2,3,4,5], 2) => [[1,2], [3,4], [5]]
+
+```
 
 ## Interfaces
 

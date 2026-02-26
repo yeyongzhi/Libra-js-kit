@@ -6,9 +6,9 @@
 
 # Function: renderTruncatedText()
 
-> **renderTruncatedText**(`text`, `params`): `string`
+> **renderTruncatedText**(`text`, `params?`): `string`
 
-Defined in: [render/index.ts:275](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L275)
+Defined in: [render/index.ts:286](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L286)
 
 渲染截断文本（超出最大长度时添加省略号）
 
@@ -20,9 +20,9 @@ Defined in: [render/index.ts:275](https://github.com/yeyongzhi/Libra-js-kit/blob
 
 任意值（会被转为字符串）
 
-### params
+### params?
 
-[`RenderTruncatedTextParams`](../type-aliases/RenderTruncatedTextParams.md) = `{}`
+[`RenderTruncatedTextParams`](../type-aliases/RenderTruncatedTextParams.md)
 
 配置项
 

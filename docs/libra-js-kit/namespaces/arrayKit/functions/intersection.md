@@ -8,7 +8,7 @@
 
 > **intersection**\<`T`\>(`a`, `b`): `T`[]
 
-Defined in: [array/index.ts:83](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/array/index.ts#L83)
+Defined in: [array/index.ts:82](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/array/index.ts#L82)
 
 返回 a 和 b 的交集
 

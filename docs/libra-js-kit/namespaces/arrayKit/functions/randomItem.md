@@ -8,7 +8,7 @@
 
 > **randomItem**\<`T`\>(`arr`): `T` \| `undefined`
 
-Defined in: [array/index.ts:122](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/array/index.ts#L122)
+Defined in: [array/index.ts:121](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/array/index.ts#L121)
 
 从数组中随机返回一个元素
 

@@ -8,7 +8,7 @@
 
 > **RenderFileSizeParams** = `object`
 
-Defined in: [render/index.ts:116](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L116)
+Defined in: [render/index.ts:125](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L125)
 
 ## Properties
 
@@ -16,4 +16,4 @@ Defined in: [render/index.ts:116](https://github.com/yeyongzhi/Libra-js-kit/blob
 
 > `optional` **precision**: `number`
 
-Defined in: [render/index.ts:117](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L117)
+Defined in: [render/index.ts:126](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L126)

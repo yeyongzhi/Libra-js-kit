@@ -36,7 +36,7 @@ async function generateTypedocConfig() {
         tsconfig: "tsconfig.typedoc.json",  // 👈 关键！
         readme: "none",
         entryPointStrategy: "resolve",
-        disableOutputCheck: true,
+        // disableOutputCheck: true,
         githubPages: false,
         hideGenerator: true,
         excludePrivate: true,

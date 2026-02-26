@@ -6,9 +6,9 @@
 
 # Function: renderPercentage()
 
-> **renderPercentage**(`value`, `params`): `string`
+> **renderPercentage**(`value`, `params?`): `string`
 
-Defined in: [render/index.ts:111](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L111)
+Defined in: [render/index.ts:119](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L119)
 
 渲染百分比
 
@@ -20,9 +20,9 @@ Defined in: [render/index.ts:111](https://github.com/yeyongzhi/Libra-js-kit/blob
 
 数值
 
-### params
+### params?
 
-[`RenderPercentageParams`](../type-aliases/RenderPercentageParams.md) = `{}`
+[`RenderPercentageParams`](../type-aliases/RenderPercentageParams.md)
 
 配置项
 

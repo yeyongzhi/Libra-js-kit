@@ -28,3 +28,7 @@ pnpm add libra-js-kit
 ## 📚 模块概览
 
 点此查看👉️[文档](docs/README.md)
+
+## 更新、发布日志
+
+点此查看👉️ [日志](CHAHGELOG.md)

@@ -1,5 +1,7 @@
 import { isDefined, defaultValue } from '../lib/index';
 import { isNumber, isString, isArray, toString } from '../dataType/index';
+import { format as formatDate } from '../date/index';
+import { DEFAULT_TIME_FORMAT } from '../date/config';
 import { FILE_SIZE_UNITS, getEmptyText, getTimeRangeSeparator } from './config';
 
 /**
@@ -31,13 +33,14 @@ export function renderObjectValue(obj: Record<string, any>, key: string): string
 export type RenderTextByArrayParams = {
   separator?: string
 }
-export function renderTextByArray(items: string[], { separator = '、' }: RenderTextByArrayParams = {}): string {
+export function renderTextByArray(items: string[], params?: RenderTextByArrayParams): string {
   if (!isDefined(items)) {
     return getEmptyText();
   }
   if (!Array.isArray(items) || items.length === 0) {
     return getEmptyText();
   }
+  const { separator = '、' } = params || {};
   return items.filter((item) => isDefined(item)).join(separator);
 }
 
@@ -51,7 +54,8 @@ export type renderValueAndUnitParams = {
  * @param {renderValueAndUnitParams} params 配置项
  * @returns {string} 渲染后的字符串
  */
-export function renderValueAndUnit(value: string | number, unit: string, { needBlock = true }: renderValueAndUnitParams): string {
+export function renderValueAndUnit(value: string | number, unit: string, params?: renderValueAndUnitParams): string {
+  const { needBlock = true } = params || {};
   if (!isDefined(value)) {
     return getEmptyText()
   }
@@ -59,7 +63,9 @@ export function renderValueAndUnit(value: string | number, unit: string, { needB
 }
 
 export type renderTimeRangeParams = {
-  separator?: string
+  separator?: string;
+  format?: string;
+  needBlock?: boolean
 }
 /**
  * 渲染时间范围
@@ -68,11 +74,12 @@ export type renderTimeRangeParams = {
  * @param {renderTimeRangeParams} params 配置项
  * @returns {string} 渲染后的字符串
  */
-export function renderTimeRange(startTime: number, endTime: number, { separator = getTimeRangeSeparator() }: renderTimeRangeParams): string {
+export function renderTimeRange(startTime: Date | string | number, endTime: Date | string | number, params?: renderTimeRangeParams): string {
   if (!isDefined(startTime) || !isDefined(endTime)) {
     return getEmptyText();
   }
-  return `${toString(startTime)}${separator}${toString(endTime)}`
+  const { separator = getTimeRangeSeparator(), format = DEFAULT_TIME_FORMAT, needBlock = true } = params || {};
+  return `${formatDate(startTime, format)}${needBlock ? ' ' : ''}${separator}${needBlock ? ' ' : ''}${formatDate(endTime, format)}`
 }
 
 export type ArrayOption = Record<string, any> & { value: string | number | symbol, label: string }
@@ -100,7 +107,8 @@ export function renderArrayLabelByValue(value: string | number | symbol, options
 }
 
 export type RenderPercentageParams = {
-  precision?: number
+  precision?: number;
+  needBlock?: boolean
 }
 /**
  * 渲染百分比
@@ -108,9 +116,10 @@ export type RenderPercentageParams = {
  * @param {RenderPercentageParams} params 配置项
  * @returns {string} 渲染后的字符串
  */
-export function renderPercentage(value: number, { precision = 2 }: RenderPercentageParams = {}): string {
+export function renderPercentage(value: number, params?: RenderPercentageParams): string {
   if (!isDefined(value) || (isDefined(value) && !isNumber(value))) return getEmptyText();
-  return `${(Number(value) * 100).toFixed(precision)}%`;
+  const { precision = 2, needBlock = true } = defaultValue(params, {});
+  return `${(Number(value) * 100).toFixed(precision)}${needBlock ? ' ' : ''}%`;
 }
 
 export type RenderFileSizeParams = {
@@ -122,8 +131,9 @@ export type RenderFileSizeParams = {
  * @param {RenderFileSizeParams} params 配置项
  * @returns {string} 渲染后的字符串
  */
-export function renderFileSize(bytes: number, { precision = 1 }: RenderFileSizeParams = {}): string {
+export function renderFileSize(bytes: number, params?: RenderFileSizeParams): string {
   if (!isDefined(bytes) || typeof bytes !== 'number' || bytes < 0) return getEmptyText();
+  const { precision = 1 } = defaultValue(params, {});
   let size = bytes;
   let unitIndex = 0;
   while (size >= 1024 && unitIndex < FILE_SIZE_UNITS.length - 1) {
@@ -143,8 +153,9 @@ export type RenderBooleanParams = {
  * @param {RenderBooleanParams} params 配置项
  * @returns {string} 渲染后的字符串
  */
-export function renderBoolean(value: boolean, { trueText = '是', falseText = '否' }: RenderBooleanParams = {}): string {
+export function renderBoolean(value: boolean, params?: RenderBooleanParams): string {
   if (!isDefined(value)) return getEmptyText();
+  const { trueText = '是', falseText = '否' } = defaultValue(params, {});
   return value ? trueText : falseText;
 }
 
@@ -272,8 +283,8 @@ export type RenderTruncatedTextParams = {
  * @param {RenderTruncatedTextParams} params 配置项
  * @returns {string} 截断后的字符串
  */
-export function renderTruncatedText(text: unknown, params: RenderTruncatedTextParams = {}): string {
-  const { maxLength = 10, ellipsis = '...' } = params;
+export function renderTruncatedText(text: unknown, params?: RenderTruncatedTextParams): string {
+  const { maxLength = 10, ellipsis = '...' } = defaultValue(params, {});
   const str = isDefined(text) ? String(text) : '';
   if (str.length <= maxLength) return str;
   return str.slice(0, maxLength) + ellipsis;
@@ -292,8 +303,8 @@ export type RenderListSummaryParams = {
  * @param {RenderListSummaryParams} params 配置项
  * @returns {string} 渲染后的字符串
  */
-export function renderListSummary(items: string[], params: RenderListSummaryParams = {}): string {
-  const { maxCount = 2, suffix = '项' } = params;
+export function renderListSummary(items: string[], params?: RenderListSummaryParams): string {
+  const { maxCount = 2, suffix = '项' } = defaultValue(params, {});
   if (!isDefined(items) || (Array.isArray(items) && items.length === 0)) {
     return getEmptyText();
   }
@@ -301,5 +312,5 @@ export function renderListSummary(items: string[], params: RenderListSummaryPara
     return renderTextByArray(items, { separator: '、' });
   }
   const shown = items.slice(0, maxCount).filter(isDefined);
-  return `${shown.join('、')}等${items.length - shown.length}${suffix}`;
+  return `${shown.join('、')} 等${items.length - shown.length}${suffix}`;
 }

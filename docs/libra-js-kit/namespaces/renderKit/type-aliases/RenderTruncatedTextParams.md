@@ -8,7 +8,7 @@
 
 > **RenderTruncatedTextParams** = `object`
 
-Defined in: [render/index.ts:263](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L263)
+Defined in: [render/index.ts:274](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L274)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [render/index.ts:263](https://github.com/yeyongzhi/Libra-js-kit/blob
 
 > `optional` **ellipsis**: `string`
 
-Defined in: [render/index.ts:265](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L265)
+Defined in: [render/index.ts:276](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L276)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [render/index.ts:265](https://github.com/yeyongzhi/Libra-js-kit/blob
 
 > `optional` **maxLength**: `number`
 
-Defined in: [render/index.ts:264](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L264)
+Defined in: [render/index.ts:275](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L275)

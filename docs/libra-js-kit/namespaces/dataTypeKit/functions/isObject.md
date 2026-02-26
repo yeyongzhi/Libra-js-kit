@@ -8,7 +8,7 @@
 
 > **isObject**(`value`): `value is object`
 
-Defined in: [dataType/index.ts:88](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/dataType/index.ts#L88)
+Defined in: [dataType/index.ts:97](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/dataType/index.ts#L97)
 
 判断是否为对象（非 null）
 

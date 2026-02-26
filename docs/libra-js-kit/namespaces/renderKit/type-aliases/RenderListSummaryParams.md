@@ -8,7 +8,7 @@
 
 > **RenderListSummaryParams** = `object`
 
-Defined in: [render/index.ts:282](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L282)
+Defined in: [render/index.ts:293](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L293)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [render/index.ts:282](https://github.com/yeyongzhi/Libra-js-kit/blob
 
 > `optional` **maxCount**: `number`
 
-Defined in: [render/index.ts:283](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L283)
+Defined in: [render/index.ts:294](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L294)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [render/index.ts:283](https://github.com/yeyongzhi/Libra-js-kit/blob
 
 > `optional` **suffix**: `string`
 
-Defined in: [render/index.ts:284](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L284)
+Defined in: [render/index.ts:295](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L295)

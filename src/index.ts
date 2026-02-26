@@ -18,7 +18,17 @@ export * as dataTypeKit from './dataType/index';
 export * as renderKit from './render/index';
 
 /**
- * 数组操作工具集，涵盖去重、分组、扁平化、打乱、分页等常用方法。
+ * 【数组操作工具集】提供分块、扁平化、分组等一些方法
+ * @example
+ * ```javascript
+ * import * as arrayKit from 'libra-js-kit/array';
+ * // 或者直接导出 chunk 方法
+ * // import { chunk } from 'libra-js-kit/array';
+ * 
+ * // 示例：将数组 [1,2,3,4,5] 按大小 2 分块
+ * arrayKit.chunk([1,2,3,4,5], 2) => [[1,2], [3,4], [5]]
+ * 
+ * ```
  */
 export * as arrayKit from './array/index';
 
@@ -27,21 +37,28 @@ export * as arrayKit from './array/index';
  */
 export * as stringKit from './string/index';
 
+/**
+ * 【验证工具集】基于正则表达式的一些简单验证方法
+ */
+export * as validateKit from './validate/index';
+
+
+
 // ----------------------------
 // 全局元信息
 // ----------------------------
 
 /**
  * 当前 `libra-js-kit` 的版本号。
- *
  * @example
- * ```ts
- * console.log(NAME, VERSION); // "libra-js-kit 1.0.0"
+ * ```javascript
+ * import * as libra from 'libra-js-kit';
+ * console.log(libra.VERSION); // "1.0.0"
  * ```
  */
-export const VERSION = '1.0.0';
+export const VERSION: string = '1.0.0';
 
 /**
- * 工具包的名称标识。
+ * 工具包的名称标识
  */
-export const NAME = 'libra-js-kit';
+export const NAME: string = 'libra-js-kit';

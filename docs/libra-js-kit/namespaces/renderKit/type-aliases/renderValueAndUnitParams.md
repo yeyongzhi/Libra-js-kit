@@ -8,7 +8,7 @@
 
 > **renderValueAndUnitParams** = `object`
 
-Defined in: [render/index.ts:44](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L44)
+Defined in: [render/index.ts:47](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L47)
 
 ## Properties
 
@@ -16,4 +16,4 @@ Defined in: [render/index.ts:44](https://github.com/yeyongzhi/Libra-js-kit/blob/
 
 > `optional` **needBlock**: `boolean`
 
-Defined in: [render/index.ts:45](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L45)
+Defined in: [render/index.ts:48](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L48)

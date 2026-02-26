@@ -8,7 +8,7 @@
 
 > **difference**\<`T`\>(`a`, `b`): `T`[]
 
-Defined in: [array/index.ts:71](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/array/index.ts#L71)
+Defined in: [array/index.ts:70](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/array/index.ts#L70)
 
 返回在 a 中但不在 b 中的元素（差集）
 

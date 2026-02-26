@@ -6,7 +6,7 @@
 
 # Interface: TreeOptions
 
-Defined in: [array/index.ts:128](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/array/index.ts#L128)
+Defined in: [array/index.ts:127](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/array/index.ts#L127)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [array/index.ts:128](https://github.com/yeyongzhi/Libra-js-kit/blob/
 
 > `optional` **childrenKey**: `string`
 
-Defined in: [array/index.ts:136](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/array/index.ts#L136)
+Defined in: [array/index.ts:135](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/array/index.ts#L135)
 
 子节点数组的字段名，默认 'children'
 
@@ -24,7 +24,7 @@ Defined in: [array/index.ts:136](https://github.com/yeyongzhi/Libra-js-kit/blob/
 
 > `optional` **idKey**: `string`
 
-Defined in: [array/index.ts:130](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/array/index.ts#L130)
+Defined in: [array/index.ts:129](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/array/index.ts#L129)
 
 节点唯一标识的字段名，默认 'id'
 
@@ -34,7 +34,7 @@ Defined in: [array/index.ts:130](https://github.com/yeyongzhi/Libra-js-kit/blob/
 
 > `optional` **parentKey**: `string`
 
-Defined in: [array/index.ts:132](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/array/index.ts#L132)
+Defined in: [array/index.ts:131](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/array/index.ts#L131)
 
 父节点标识的字段名，默认 'parentId'
 
@@ -44,6 +44,6 @@ Defined in: [array/index.ts:132](https://github.com/yeyongzhi/Libra-js-kit/blob/
 
 > `optional` **rootValue**: `unknown`
 
-Defined in: [array/index.ts:134](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/array/index.ts#L134)
+Defined in: [array/index.ts:133](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/array/index.ts#L133)
 
 根节点的 parentId 值，默认 null

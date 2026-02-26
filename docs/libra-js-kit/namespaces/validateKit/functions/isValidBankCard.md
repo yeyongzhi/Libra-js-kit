@@ -1,0 +1,34 @@
+[**libra-js-kit**](../../../../README.md)
+
+***
+
+[libra-js-kit](../../../../README.md) / [validateKit](../README.md) / isValidBankCard
+
+# Function: isValidBankCard()
+
+> **isValidBankCard**(`cardNumber`): `boolean`
+
+Defined in: validate/index.ts:117
+
+验证中国大陆银行卡号（Luhn算法）
+
+## Parameters
+
+### cardNumber
+
+`string`
+
+银行卡号
+
+## Returns
+
+`boolean`
+
+是否为有效的银行卡号
+
+## Example
+
+```javascript
+isValidBankCard('6222021234567890'); // true
+isValidBankCard('1234567890123456'); // false
+```

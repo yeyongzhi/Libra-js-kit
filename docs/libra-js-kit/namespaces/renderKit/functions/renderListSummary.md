@@ -6,9 +6,9 @@
 
 # Function: renderListSummary()
 
-> **renderListSummary**(`items`, `params`): `string`
+> **renderListSummary**(`items`, `params?`): `string`
 
-Defined in: [render/index.ts:295](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/render/index.ts#L295)
+Defined in: [render/index.ts:306](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L306)
 
 渲染列表摘要（最多显示前 N 个项，超出部分用 '等x项' 表示）
 
@@ -20,9 +20,9 @@ Defined in: [render/index.ts:295](https://github.com/yeyongzhi/Libra-js-kit/blob
 
 字符串数组
 
-### params
+### params?
 
-[`RenderListSummaryParams`](../type-aliases/RenderListSummaryParams.md) = `{}`
+[`RenderListSummaryParams`](../type-aliases/RenderListSummaryParams.md)
 
 配置项
 

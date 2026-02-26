@@ -17,6 +17,7 @@
 - [isError](functions/isError.md)
 - [isFunction](functions/isFunction.md)
 - [isMap](functions/isMap.md)
+- [isNaN](functions/isNaN.md)
 - [isNull](functions/isNull.md)
 - [isNumber](functions/isNumber.md)
 - [isObject](functions/isObject.md)

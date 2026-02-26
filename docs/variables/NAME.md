@@ -6,8 +6,8 @@
 
 # Variable: NAME
 
-> `const` **NAME**: `"libra-js-kit"` = `'libra-js-kit'`
+> `const` **NAME**: `string` = `'libra-js-kit'`
 
-Defined in: [index.ts:47](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/index.ts#L47)
+Defined in: [index.ts:64](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/index.ts#L64)
 
-工具包的名称标识。
+工具包的名称标识

@@ -18,6 +18,30 @@ export function capitalize(str: string): string {
 }
 
 /**
+ * 全部大写
+ * @param {string} str 待处理的字符串
+ * @returns 处理后的字符串
+ */
+export function allUpperCase(str: string): string {
+    if (!isDefined(str) || str.length === 0) {
+        return "";
+    }
+    return str.toUpperCase();
+}
+
+/**
+ * 全部小写
+ * @param {string} str 待处理的字符串
+ * @returns 处理后的字符串
+ */
+export function allLowerCase(str: string): string {
+    if (!isDefined(str) || str.length === 0) {
+        return "";
+    }
+    return str.toLowerCase();
+}
+
+/**
  * 字符串反转
  * @example
  * reverse("hello world")  // dlrow olleh

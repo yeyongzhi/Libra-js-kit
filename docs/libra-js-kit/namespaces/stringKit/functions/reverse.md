@@ -8,7 +8,7 @@
 
 > **reverse**(`str`): `string`
 
-Defined in: [string/index.ts:27](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/string/index.ts#L27)
+Defined in: [string/index.ts:51](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/string/index.ts#L51)
 
 字符串反转
 

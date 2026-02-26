@@ -8,7 +8,7 @@
 
 > **isDate**(`value`): `value is Date`
 
-Defined in: [dataType/index.ts:106](https://github.com/yeyongzhi/Libra-js-kit/blob/e262d86e95a7b517dd819db2acdaf5f1d8b83c45/src/dataType/index.ts#L106)
+Defined in: [dataType/index.ts:115](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/dataType/index.ts#L115)
 
 判断是否为日期对象
 
