@@ -8,7 +8,7 @@
 
 > **renderText**(`value`): `string`
 
-Defined in: [render/index.ts:13](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L13)
+Defined in: [render/index.ts:13](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/render/index.ts#L13)
 
 渲染文本值
 对于一些序列化的数据，请自行使用JSON.stringify方法

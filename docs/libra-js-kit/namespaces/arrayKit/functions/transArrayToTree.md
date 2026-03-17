@@ -8,7 +8,7 @@
 
 > **transArrayToTree**\<`T`\>(`list`, `options`): `T`[]
 
-Defined in: [array/index.ts:159](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/array/index.ts#L159)
+Defined in: [array/index.ts:159](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/array/index.ts#L159)
 
 将扁平数组转换为树形结构
 

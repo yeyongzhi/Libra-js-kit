@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});let e="-";function t(){return e}let r="~";function n(){return r}const a=["B","KB","MB","GB","TB"];exports.FILE_SIZE_UNITS=a;exports.getEmptyText=t;exports.getTimeRangeSeparator=n;

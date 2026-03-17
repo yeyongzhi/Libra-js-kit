@@ -31,4 +31,4 @@ pnpm add libra-js-kit
 
 ## 更新、发布日志
 
-点此查看👉️ [日志](CHAHGELOG.md)
+点此查看👉️ [日志](CHANGELOG.md)

@@ -8,7 +8,7 @@
 
 > **isValidWeChat**(`wechat`): `boolean`
 
-Defined in: validate/index.ts:168
+Defined in: [validate/index.ts:168](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/validate/index.ts#L168)
 
 验证微信ID
 

@@ -8,7 +8,7 @@
 
 > **isMap**(`value`): `value is Map<any, any>`
 
-Defined in: [dataType/index.ts:142](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/dataType/index.ts#L142)
+Defined in: [dataType/index.ts:142](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/dataType/index.ts#L142)
 
 判断是否为 Map
 

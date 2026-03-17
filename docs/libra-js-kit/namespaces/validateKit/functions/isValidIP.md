@@ -8,7 +8,7 @@
 
 > **isValidIP**(`ip`): `boolean`
 
-Defined in: validate/index.ts:228
+Defined in: [validate/index.ts:228](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/validate/index.ts#L228)
 
 验证IP地址（IPv4或IPv6）
 

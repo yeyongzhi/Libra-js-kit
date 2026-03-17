@@ -8,7 +8,7 @@
 
 > **RenderBooleanParams** = `object`
 
-Defined in: [render/index.ts:146](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L146)
+Defined in: [render/index.ts:146](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/render/index.ts#L146)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [render/index.ts:146](https://github.com/yeyongzhi/Libra-js-kit/blob
 
 > `optional` **falseText**: `string`
 
-Defined in: [render/index.ts:148](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L148)
+Defined in: [render/index.ts:148](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/render/index.ts#L148)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [render/index.ts:148](https://github.com/yeyongzhi/Libra-js-kit/blob
 
 > `optional` **trueText**: `string`
 
-Defined in: [render/index.ts:147](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L147)
+Defined in: [render/index.ts:147](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/render/index.ts#L147)

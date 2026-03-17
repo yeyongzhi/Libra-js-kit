@@ -8,7 +8,7 @@
 
 > **renderListSummary**(`items`, `params?`): `string`
 
-Defined in: [render/index.ts:306](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L306)
+Defined in: [render/index.ts:306](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/render/index.ts#L306)
 
 渲染列表摘要（最多显示前 N 个项，超出部分用 '等x项' 表示）
 

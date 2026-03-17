@@ -1,0 +1,69 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Testing
+coverage
+*.lcov
+.nyc_output
+
+# Temporary files
+*.tmp
+*.temp
+.cache
+
+# Documentation source
+src
+test
+scripts
+
+# IDE and editor files
+.trae
+*.md
+!README.md
+
+# Build artifacts
+*.tsbuildinfo
+
+# Git
+.git
+.gitignore
+
+# Config files for development
+vite.config.ts
+tsconfig.json
+tsconfig.build.json
+tsconfig.typedoc.json
+
+# CI/CD
+.github
+.gitlab-ci.yml
+.travis.yml
+circle.yml

@@ -8,7 +8,7 @@
 
 > **isValidBankCard**(`cardNumber`): `boolean`
 
-Defined in: validate/index.ts:117
+Defined in: [validate/index.ts:117](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/validate/index.ts#L117)
 
 验证中国大陆银行卡号（Luhn算法）
 

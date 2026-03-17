@@ -8,7 +8,7 @@
 
 > **isValidOrgCode**(`orgCode`): `boolean`
 
-Defined in: validate/index.ts:272
+Defined in: [validate/index.ts:272](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/validate/index.ts#L272)
 
 验证组织机构代码
 

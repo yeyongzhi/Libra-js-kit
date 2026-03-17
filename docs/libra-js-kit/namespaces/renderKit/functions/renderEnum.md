@@ -8,7 +8,7 @@
 
 > **renderEnum**(`value`, `mapping`): `string`
 
-Defined in: [render/index.ts:170](https://github.com/yeyongzhi/Libra-js-kit/blob/6bbe6eb1086d7da719bc8104cb42aad2d0d48569/src/render/index.ts#L170)
+Defined in: [render/index.ts:170](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/render/index.ts#L170)
 
 渲染枚举值（基于映射对象）和上面的renderObjectValue类似
 
