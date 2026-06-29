@@ -34,6 +34,9 @@ coverage
 *.lcov
 .nyc_output
 
+# VitePress API 文档同步产物（由 docs:typedoc 自动生成）
+doc/api/
+
 # Temporary files
 *.tmp
 *.temp

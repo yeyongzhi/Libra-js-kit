@@ -8,7 +8,7 @@
 
 > **renderMaskedString**(`value`, `params`): `string`
 
-Defined in: [render/index.ts:217](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/render/index.ts#L217)
+Defined in: [render/index.ts:217](https://github.com/yeyongzhi/Libra-js-kit/blob/4fd7ed01bac541377557cf39d16aac87ef73b371/src/render/index.ts#L217)
 
 通用字符串脱敏渲染器
 支持隐藏前/后/中间部分，适用于手机号、身份证、银行卡、邮箱等

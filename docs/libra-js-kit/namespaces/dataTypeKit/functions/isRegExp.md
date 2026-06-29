@@ -8,7 +8,7 @@
 
 > **isRegExp**(`value`): `value is RegExp`
 
-Defined in: [dataType/index.ts:124](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/dataType/index.ts#L124)
+Defined in: [dataType/index.ts:124](https://github.com/yeyongzhi/Libra-js-kit/blob/4fd7ed01bac541377557cf39d16aac87ef73b371/src/dataType/index.ts#L124)
 
 判断是否为正则表达式
 

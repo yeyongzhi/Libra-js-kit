@@ -56,7 +56,7 @@ export * as validateKit from './validate/index';
  * console.log(libra.VERSION); // "1.0.0"
  * ```
  */
-export const VERSION: string = '1.0.0';
+export const VERSION: string = '1.1.0';
 
 /**
  * 工具包的名称标识

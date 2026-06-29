@@ -8,7 +8,7 @@
 
 > `const` **VERSION**: `string` = `'1.0.0'`
 
-Defined in: [index.ts:59](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/index.ts#L59)
+Defined in: [index.ts:59](https://github.com/yeyongzhi/Libra-js-kit/blob/4fd7ed01bac541377557cf39d16aac87ef73b371/src/index.ts#L59)
 
 当前 `libra-js-kit` 的版本号。
 

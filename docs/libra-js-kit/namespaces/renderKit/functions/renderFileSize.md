@@ -8,7 +8,7 @@
 
 > **renderFileSize**(`bytes`, `params?`): `string`
 
-Defined in: [render/index.ts:134](https://github.com/yeyongzhi/Libra-js-kit/blob/66ee5c799a446936408217b16c0bf38b1094a7a0/src/render/index.ts#L134)
+Defined in: [render/index.ts:134](https://github.com/yeyongzhi/Libra-js-kit/blob/4fd7ed01bac541377557cf39d16aac87ef73b371/src/render/index.ts#L134)
 
 渲染文件大小
 
