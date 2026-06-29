@@ -4,7 +4,7 @@ import * as a from "./render.js";
 import * as o from "./array.js";
 import * as i from "./string.js";
 import * as s from "./validate.js";
-const e = "1.0.0", p = "libra-js-kit";
+const e = "1.1.0", p = "libra-js-kit";
 export {
   p as NAME,
   e as VERSION,
